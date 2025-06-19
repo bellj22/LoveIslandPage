@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./images/logo love.jpg" size="100x100"/>
     <title>LoveIslandUSA Page</title>
     <!--LINKS CSS AND FONTS-->
     <link rel="stylesheet" href="styles.css">
@@ -34,7 +35,14 @@
             <nav class="nav-links">
                 <a href="#">Home</a>
                 <a href="#">Watch</a>
-                <a href="#">Cast</a>
+                <!--<a href="#">Cast</a> -->
+                <span class="cast-menu">Cast
+                    <div class="dropdown-content">
+                        <a href="#">Meet the Girls</a>
+                        <a href="#">Meet the Boys</a>
+                    </div>
+                </span>
+
                 <a href="#"><span class="material-icons">shopping_cart</span></a>
             </nav>
         </div>
@@ -42,6 +50,11 @@
 
     <div class="banner">
         <div class="banner-track">
+            <span class="color1">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
+            <span class="color2">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
+            <span class="color3">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
+            <span class="color4">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
+            <span class="color5">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
             <span class="color1">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
             <span class="color2">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
             <span class="color3">THAT'S JUST THE WAY YOU MAKE ME FEEL</span>
@@ -71,7 +84,24 @@
     </section>
 
     <section class="igotatext-banner">
-        <img src="./images/igot-atext.png" alt="I Got A Text!" class="got-a-text">
+        <video class="got-a-text" autoplay muted loop playsinline>
+            <source src="./images/igot-atext.mp4" type="video/mp4">
+            Browser does nto support the video tag
+        </video>
+    </section>
+
+    <section class="season-trailer-card">
+        <div class="trailer-card">
+
+            <div class="trailer-caption">
+                <h3>Take A Look Into The New Season Now!</h3>
+            </div>
+            <video autoplay muted loop playsinline class="trailer-vid">
+                <source src="./images/trailer-clip.mp4" type="video/mp4">
+            </video>
+
+
+        </div>
     </section>
 
     <section class="meet-girls-section">
@@ -95,6 +125,7 @@
         <img src="./images/meet-boys.jpg" alt="Meet The Boys" class="meet-img">
     </section>
 
+
     <section class="week-photos">
         <h2>Weekly Photos</h2>
         <div class="photos-carousel">
@@ -104,6 +135,12 @@
                 <img src="./images/photo-trans3.jpg" alt="Photo3">
                 <img src="./images/photo-trans4.jpg" alt="Photo4">
                 <img src="./images/photo-trans5.jpg" alt="Photo5">
+                <img src="./images/photo-trans6.jpg" alt="Photo6">
+                <img src="./images/photo-trans7.jpg" alt="Photo7">
+                <img src="./images/photo-trans8.jpg" alt="Photo8">
+                <img src="./images/photo-trans9.jpg" alt="Photo9">
+                <img src="./images/photo-trans10.jpg" alt="Photo10">
+                <img src="./images/photo-trans11.jpg" alt="Photo11">
             </div>
         </div>
     </section>
@@ -128,7 +165,7 @@
 
     <section class="visit-store">
         <div class="visit">
-            <h2>Visit Our Store</h2>
+             <h2><span class="underline-only">Visit Our Store</span> 🛍️</h2>
         
             <div class="store-items">
                 <div class="store-item">
@@ -157,6 +194,12 @@
         </video>
     </section>
 
+    <section class="lovepurple-vid">
+        <video autoplay muted loop playsinline class="socials-video-purple">
+            <source src="./images/purplevid.mp4" type="video/mp4">
+        </video>
+    </section>
+
     <section class="love-island-cast">
         <div class="cast-s7">
             <img src="./images/full-cast.jpg" alt="Listen To Playlist" class="casting">
@@ -169,7 +212,22 @@
     </section>
 
     <footer class="ending-footer">
-        <img src="./images/pink-redphoto.png" alt="pink-red gradient">
+        <div class="footer-content">
+            <img src="./images/Union.png" alt="pink-red gradient" class="footer-logo">
+
+            <nav class="footer-nav">
+                <a href="#">Home</a>
+                <a href="#">Watch</a>
+                <a href="#">Cast</a>
+                <a href="#">Shop</a>
+            </nav>
+
+            <div class="footer-socials">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
