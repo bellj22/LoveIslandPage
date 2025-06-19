@@ -11,7 +11,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <style>
+    @font-face {
+        font-family: 'Pecita';
+        src: url('./fonts/Pecita.otf') format('opentype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    </style>
 </head>
+
 <body>
     <!-- HEADER -->
     <header class="main">
@@ -57,7 +67,7 @@
     </section>
 
     <section class="casting-video">
-        <video class="center-vid" src="./images/cast-trans.mp4" controls autoplay muted loop></video>
+        <video class="center-vid" src="./images/cast-trans.mp4" autoplay muted loop playsinlince></video>
     </section>
 
     <section class="igotatext-banner">
@@ -84,5 +94,82 @@
         </div>
         <img src="./images/meet-boys.jpg" alt="Meet The Boys" class="meet-img">
     </section>
+
+    <section class="week-photos">
+        <h2>Weekly Photos</h2>
+        <div class="photos-carousel">
+            <div class="carousel">
+                <img src="./images/photo-trans1.jpg" alt="Photo1">
+                <img src="./images/photo-trans2.jpg" alt="Photo2">
+                <img src="./images/photo-trans3.jpg" alt="Photo3">
+                <img src="./images/photo-trans4.jpg" alt="Photo4">
+                <img src="./images/photo-trans5.jpg" alt="Photo5">
+            </div>
+        </div>
+    </section>
+
+    <section class="host-photo">
+        <div class="host-card">
+            <img src="./images/host-madix.jpg" alt="Host Ariana Madix" class="host-img">
+
+            <div class="host-caption">
+                <h3>Fit Check!<br>
+                Let's look at Ariana's Recent<br> Iconic Season 7 Fashion<br> Statments 🌟</h3>
+                <button class="host-button">Host</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="listen-on-spotify">
+        <div class="spotify-wrap">
+            <img src="./images/listenspotify.png" alt="Listen To Playlist" class="got-a-text">
+        </div>
+    </section>
+
+    <section class="visit-store">
+        <div class="visit">
+            <h2>Visit Our Store</h2>
+        
+            <div class="store-items">
+                <div class="store-item">
+                    <img src="./images/item1.jpg" alt="Item 1">
+                    <p class="item-name">Love Island Water Bottle</p>
+                    <p class="item-price">35.00</p>
+                </div>
+            
+                <div class="store-item">
+                    <img src="./images/item2.jpg" alt="Item 2">
+                    <p class="item-name">Glitter Puff Heart Necklace</p>
+                    <p class="item-price">35.00</p>
+                </div>
+                <div class="store-item">
+                    <img src="./images/item3.jpg" alt="Item 3">
+                    <p class="item-name">Love Island USA Hoodie</p>
+                    <p class="item-price">40.00</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="social-media">
+        <video autoplay muted loop playsinlince class="socials-video">
+            <source src="./images/socials-video.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section class="love-island-cast">
+        <div class="cast-s7">
+            <img src="./images/full-cast.jpg" alt="Listen To Playlist" class="casting">
+            <div class="cast-bar blue"></div>
+            <div class="cast-bar orange"></div>
+            <div class="cast-bar yellow"></div>
+            <div class="cast-bar green"></div>
+            <div class="cast-bar pink"></div>
+        </div>
+    </section>
+
+    <footer class="ending-footer">
+        <img src="./images/pink-redphoto.png" alt="pink-red gradient">
+    </footer>
 </body>
 </html>

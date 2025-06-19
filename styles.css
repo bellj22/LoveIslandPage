@@ -211,8 +211,8 @@ body {
 }
 
 .girls-button:hover {
-    background-color: #fb98c1;
-    color: #FF1C79;
+    background-color: #ff8210;
+    color: #ff0f39;
 }
 
 .meet-boys-section {
@@ -232,8 +232,239 @@ body {
     padding: 60px 20px;
     border-radius: 0;
 }
+.boys-button {
+    background-color: #40E8FB;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s; 
+}
+
+.boys-button:hover {
+    color: #0bace1;
+    background-color: #10ffd4;
+}
+
+.week-photos {
+    padding: 60px 20px 40px;
+    text-align: center;
+    background-color: white;
+}
+
+.week-photos h2 {
+    font-family: 'Pecita', cursive;
+    font-size: 40px;
+    color: #FF40C6;
+    text-decoration: underline;
+    text-decoration-color: #FF40C6;
+    text-underline-offset: 8px;
+    margin: 0;
+}
+
+.photos-carousel {
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    padding: 60px 0;
+    background-color: white;
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    scroll-snap-align: start;
+}
+
+.carousel img {
+    width: 250px;
+    height: auto;
+    border-radius: 12px;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    transition: transform 0.3s;
+}
+
+.carousel img:hover {
+    transform: scale(1.05);
+}
 
 
+.host-photo {
+    background-color: white;
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.host-card {
+    max-width: 800px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.host-img {
+    width: 100%;
+    display: block;
+    border-radius: 0;
+    margin: 0;
+}
+
+.host-caption {
+    background-color: #F62AA0;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.host-caption h3 {
+    font-size: 25px;
+    line-height: 1.6;
+    margin: 0 0 20px;
+    text-shadow: 4px 3px 6px #6c6c6c;
+
+}
+
+.host-button {
+    background-color: #FF5BC3;
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.host-button:hover {
+    background-color: #ff84d1;
+    color: #f923a0;
+}
+
+.listen-on-spotify, .love-island-cast {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.spotify-wrap, .cast-s7 {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.visit {
+    background-color: #B1A1ED;
+    padding: 40px 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.visit-store h2 {
+    font-family: 'Pecita', cursive;
+    font-weight: 400;
+    color: white;
+    text-decoration: underline;
+    text-underline-offset: 5px;
+    font-size: 36px;
+    margin: 0;
+}
+
+.store-items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 40px;
+}
+
+.store-item {
+    background-color: #F9F9F9;
+    padding: 20px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.store-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.item-name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+    margin: 0;
+}
+
+.item-price {
+    font-size: 16px;
+    color: #000;
+    margin: 5px 0 0;
+}
+
+.social-media {
+    padding: 60px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.socials-video {
+    width: 100%;
+    max-width: 1920px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.love-island-cast {
+    margin: 0;
+    padding: 0;
+}
+
+.casting {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+.cast-s7 {
+    width: 100%;
+    line-height: 0;
+}
+
+.cast-bar {
+    height: 20px;  
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.cast-bar.blue {
+    height: 8px;
+    background-color: #09CEF5;
+}
+.cast-bar.orange {
+    background-color: #FF8210;
+}
+.cast-bar.green {
+    background-color: #5CE661;
+}
+.cast-bar.yellow {
+    background-color: #FFEB5B;
+}
+.cast-bar.pink {
+    background-color: #FF0099;
+}
 
 /* ---------------------- */
 /* MEDIA DEVICES */
@@ -258,6 +489,12 @@ body {
     }
     .box h3 {
         font-size: 20px;
+    }
+    .host-card {
+        max-width: 500px;
+    }
+    .host-caption h3 {
+        font-size: 22px;
     }
 }
 
