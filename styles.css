@@ -330,7 +330,7 @@ body {
 }
 
 .trailer-caption {
-    background-color: #444;
+    background-color: #09CEF5;
     color: white;
     padding: 30px 20px;
     text-align: center;
@@ -340,7 +340,7 @@ body {
     font-size: 27px;
     line-height: 1.6;
     margin: 0;
-    text-shadow: 4px 3px 6px #070606;
+    text-shadow: 4px 3px 6px #555;
 }
 
 
@@ -398,7 +398,8 @@ body {
 
 
 .host-photo {
-    background-color: rgb(233, 195, 245);
+    /*background-color: rgb(233, 195, 245); */
+    background: linear-gradient(to bottom, #fce4ff, #d1bbfa);
     padding: 60px 20px;
     display: flex;
     justify-content: center;
@@ -458,6 +459,14 @@ body {
     display: flex;
     justify-content: center;
     padding-bottom: 40px;
+}
+
+.spotify-wrap {
+    max-width: 1000px !important; 
+}
+
+.spotify-wrap img {
+    border-radius: 15px;
 }
 
 .spotify-wrap, .cast-s7 {
@@ -678,6 +687,9 @@ body {
     .box h3 {
         font-size: 20px;
     }
+    .spotify-wrap {
+    max-width: 600px !important; 
+    }
     .host-card {
         max-width: 500px;
     }
@@ -691,7 +703,7 @@ body {
         width: 500px;
     }
     .trailer-card {
-        max-width: 600px;
+        max-width: 550px;
     }
 }
 
