@@ -213,6 +213,15 @@ body {
     flex-direction: column;
 }
 
+/* Yulissa Section */
+.yulissa-card {
+    background: linear-gradient(to bottom, #f92d30, #ae2cf4);
+    padding: 60px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 /* PHOTO CARDS */
 .girls-carousel {
     margin-top: 40px;
