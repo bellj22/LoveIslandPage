@@ -263,6 +263,7 @@ body {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
+    text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s; 
 }
@@ -297,6 +298,7 @@ body {
     font-size: 16px;
     border-radius: 15px;
     cursor: pointer;
+    text-decoration: none;
     font-weight: 600;
     transition: background-color 0.3s; 
 }
@@ -406,7 +408,7 @@ body {
 }
 
 .host-card {
-    max-width: 800px;
+    max-width: 600px;
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -462,18 +464,25 @@ body {
 }
 
 .spotify-wrap {
-    max-width: 1000px !important; 
+    max-width: 800px !important; 
 }
 
 .spotify-wrap img {
     border-radius: 15px;
 }
 
-.spotify-wrap, .cast-s7 {
+.spotify-wrap {
     position: relative;
     width: 100%;
     max-width: 1920px;
 }
+
+.cast-s7 {
+    position: relative;
+    width: 100%;
+    max-width: 1920px;
+}
+
 
 .visit {
     background: linear-gradient(to bottom, #ae2cf4, #81fae1);
@@ -541,12 +550,15 @@ body {
 .social-media {
     padding: 60px 20px;
     background-color: white;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .socials-video {
     width: 100%;
-    max-width: 1250px;
+    max-width: 1050px;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
@@ -691,14 +703,15 @@ body {
     max-width: 600px !important; 
     }
     .host-card {
-        max-width: 500px;
+        max-width: 400px;
     }
     .host-caption h3 {
-        font-size: 22px;
+        font-size: 18px;
     }
-    .socials-video {
-        width: 600px;
+    .store-item {
+        width: 200px;
     }
+
     .socials-video-purple {
         width: 500px;
     }
@@ -712,5 +725,12 @@ body {
         top: 90%;
         font-size: 16px;
     }
+    .socials-video {
+        width: 400px;
+    }
+    .socials-video-purple {
+        width: 200px;
+    }
+
     
 }
